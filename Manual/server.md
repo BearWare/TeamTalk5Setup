@@ -113,10 +113,10 @@ console application.
 
 For instructions on how to configure and run the TeamTalk server
 (tt5srv) simply type:\verbatim
-./tt5srv
+/Applications/TeamTalk5.app/Contents/Server/tt5srv
 \endverbatim
 To start the TeamTalk server setup-wizard type:\verbatim
-./tt5srv -wizard
+/Applications/TeamTalk5.app/Contents/Server/tt5srv -wizard
 \endverbatim
 
 When running the setup-wizard then make sure the executable is run at
