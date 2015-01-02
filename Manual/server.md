@@ -3,7 +3,8 @@
 This section explains how to set up a TeamTalk server. This is a quite
 complicated procedure so users who are not so skilled with network
 setup are advised to use the public TeamTalk servers which are
-available in the Connect to Server dialog (press F2).
+available in the [Connect to Server dialog](@ref connectdlg) (press
+F2).
 
 Here's an overview of this section:
 
@@ -17,8 +18,8 @@ Here's an overview of this section:
 
 # TeamTalk Server for Windows {#winserver}
 
-To be able to set up a TeamTalk server you first you need to ensure that the
-TeamTalk server was installed when you ran the TeamTalk
+To be able to set up a TeamTalk server you first you need to ensure
+that the TeamTalk server was installed when you ran the TeamTalk
 installation. If the server is installed there will be a folder called
 "TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
 start-menu.
