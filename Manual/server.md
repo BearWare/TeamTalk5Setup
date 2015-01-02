@@ -3,20 +3,26 @@
 This section explains how to set up a TeamTalk server. This is a quite
 complicated procedure so users who are not so skilled with network
 setup are advised to use the public TeamTalk servers which are
-available in the Connect to Server dialog (press F2). To be able to
-set up a TeamTalk server you first you need to ensure that the
-TeamTalk server was installed when you ran the TeamTalk
-installation. If it is installed there will be a folder called
-"TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
-start-menu.
+available in the Connect to Server dialog (press F2).
 
 Here's an overview of this section:
 
-- [Configuring and Installing the TeamTalk Server as an NT service](@ref ntservice)
-- [Installing multiple NT Services](@ref multintservice)
-- [TeamTalk Server on Linux and Mac OS X](@ref tt5srv)
+- [TeamTalk Server for Windows](@ref winserver)
+  - [Installing the TeamTalk Server as an NT service](@ref ntservice)
+  - [Installing multiple TeamTalk NT Services](@ref multintservice)
+- [TeamTalk Server for Linux](@ref tt5srvlinux)
+- [TeamTalk Server for Mac OS X](@ref tt5srvmac)
 
-# Configuring and Installing the TeamTalk Server as an NT service {#ntservice}
+
+# TeamTalk Server for Windows {#winserver}
+
+To be able to set up a TeamTalk server you first you need to ensure that the
+TeamTalk server was installed when you ran the TeamTalk
+installation. If the server is installed there will be a folder called
+"TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
+start-menu.
+
+## Installing the TeamTalk Server as an NT service {#ntservice}
 
 To install the TeamTalk server click "Install TeamTalk NT Service" in
 the TeamTalk 5 program group. On Windows this will bring up User
@@ -38,7 +44,7 @@ the administrator user account that you just created. Use the
 for the server.
 
 
-# Installing multiple NT Services {#multintservice}
+## Installing multiple TeamTalk NT Services {#multintservice}
 
 To install multiple TeamTalk 5 NT Services the **sc.exe** command can
 be used. Here is an example:\verbatim
@@ -61,17 +67,14 @@ To uninstall it type:\verbatim
 sc.exe delete "TeamTalk Server 2"
 \endverbatim
 
-# TeamTalk Server on Linux and Mac OS X {#tt5srv}
+# TeamTalk Server for Linux {#tt5srvlinux}
 
-The Linux and Mac OS X distributions of TeamTalk also include a
-TeamTalk server which can run both in daemon mode and as a regular
-console application. On Linux the TeamTalk server binary is called
-**tt5srv** and is located in the **server**-subfolder after untar'ing
-the archive.
+On Linux the TeamTalk server binary is called **tt5srv** and is 
+located in the **server**-subfolder after untar'ing the archive.
 
-On Mac OS X the server binary is also called teamtalkd and is located
-in **Applications/TeamTalk5.app/Contents/Server** subfolder after
-installing the TeamTalk .dmg file.
+The TeamTalk server for Linux can run both in daemon mode and as a regular
+console application. A daemon script is also included which can be put in
+**/etc/init.d**.
 
 For instructions on how to configure and run the TeamTalk server
 (tt5srv) simply type:\verbatim
@@ -85,3 +88,24 @@ When running the setup-wizard then make sure the executable is run at
 a writable location so it's possible for the setup-wizard to save its
 changes to disk.
 
+
+# TeamTalk Server for Mac OS X {#tt5srvmac}
+
+On Mac OS X the server binary is also called **tt5srv** and is located
+in **Applications/TeamTalk5.app/Contents/Server** subfolder after
+installing the TeamTalk .dmg file.
+
+The TeamTalk server for Mac OS X can run both in daemon mode and as a regular
+console application.
+
+For instructions on how to configure and run the TeamTalk server
+(tt5srv) simply type:\verbatim
+./tt5srv
+\endverbatim
+To start the TeamTalk server setup-wizard type:\verbatim
+./tt5srv -wizard
+\endverbatim
+
+When running the setup-wizard then make sure the executable is run at
+a writable location so it's possible for the setup-wizard to save its
+changes to disk.
