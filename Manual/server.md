@@ -8,6 +8,7 @@ available in the Connect to Server dialog (press F2).
 Here's an overview of this section:
 
 - [TeamTalk Server for Windows](@ref winserver)
+  - [TeamTalk Console Server](@ref consoleserver)
   - [Installing the TeamTalk Server as an NT service](@ref ntservice)
   - [Installing multiple TeamTalk NT Services](@ref multintservice)
 - [TeamTalk Server for Linux](@ref tt5srvlinux)
@@ -21,6 +22,18 @@ TeamTalk server was installed when you ran the TeamTalk
 installation. If the server is installed there will be a folder called
 "TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
 start-menu.
+
+## TeamTalk Console Server
+
+To start the TeamTalk Console Server click "TeamTalk 5 Console Server"
+in the TeamTalk 5 program group. This will bring up a console window
+where you're asked if you want to configure the TeamTalk server.
+
+Unlike the [TeamTalk NT service](@ref ntservice) the Windows console
+server doesn't require administrator access because all settings for
+the server will be saved in your home-directory:\verbatim
+c:\Users\USERNAME\AppData\Roaming\BearWare.dk\tt5srv.xml
+\endverbatim
 
 ## Installing the TeamTalk Server as an NT service {#ntservice}
 
