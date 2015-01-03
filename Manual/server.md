@@ -20,12 +20,12 @@ Here's an overview of this section:
 
 To be able to set up a TeamTalk server you first you need to ensure
 that the TeamTalk server was installed when you ran the TeamTalk
-installation. If the server is installed there will be a folder called
-"TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
-start-menu.
+installation.
 
 ![Install TeamTalk Server](install_server.png "Install TeamTalk Server component")
 
+If the server is installed there will be a folder called "TeamTalk NT
+Service" in the "TeamTalk 5" program group of Windows' start-menu.
 
 ## TeamTalk Console Server {#consoleserver}
 
@@ -89,14 +89,15 @@ sc.exe delete "TeamTalk Server 2"
 On Linux the TeamTalk server binary is called **tt5srv** and is 
 located in the **server**-subfolder after untar'ing the archive.
 
-The TeamTalk server for Linux can run both in daemon mode and as a regular
-console application. A daemon script is also included which can be put in
-**/etc/init.d**.
+The TeamTalk server for Linux can run both in daemon mode and as a
+regular console application. A daemon script is also included which
+can be put in /etc/init.d.
 
 For instructions on how to configure and run the TeamTalk server
 (tt5srv) simply type:\verbatim
 ./tt5srv
 \endverbatim
+
 To start the TeamTalk server setup-wizard type:\verbatim
 ./tt5srv -wizard
 \endverbatim
@@ -119,6 +120,7 @@ For instructions on how to configure and run the TeamTalk server
 (tt5srv) simply type:\verbatim
 /Applications/TeamTalk5.app/Contents/Server/tt5srv
 \endverbatim
+
 To start the TeamTalk server setup-wizard type:\verbatim
 /Applications/TeamTalk5.app/Contents/Server/tt5srv -wizard
 \endverbatim
