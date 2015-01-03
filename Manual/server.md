@@ -24,7 +24,10 @@ installation. If the server is installed there will be a folder called
 "TeamTalk NT Service" in the "TeamTalk 5" program group of Windows'
 start-menu.
 
-## TeamTalk Console Server
+![Install TeamTalk Server](install_server.png "Install TeamTalk Server component")
+
+
+## TeamTalk Console Server {#consoleserver}
 
 To start the TeamTalk Console Server click "TeamTalk 5 Console Server"
 in the TeamTalk 5 program group. This will bring up a console window
