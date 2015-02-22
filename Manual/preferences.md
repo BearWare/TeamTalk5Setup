@@ -78,16 +78,17 @@ The items in the Display-tab are explained here:
 - **Start video in popup dialog**
   - When a user starts transmitting video (from webcam) to the video
     session should be displayed in a separate dialog instead of in the
-    Video-tab.
+    [Video-tab](@ref videotab).
 
 - **Closed video dialog should return to video-tab**
   - By default closing a video popup dialog will return it to the
-    video-tab. If the video should simply no longer be displayed after
-    closing a video dialog then uncheck this option.
+    [Video-tab](@ref videotab). If the video should simply no longer
+    be displayed after closing a video dialog then uncheck this
+    option.
 
 - **Start desktops in popup dialog**
   - When a user shares a desktop window it should be displayed in a
-    separate dialog instead of the desktop-tab.
+    separate dialog instead of the [Desktop-tab](@ref desktoptab).
     
 - **Timestamp text messages**
   - If enabled each text message will have a timestamp telling when it
@@ -96,16 +97,16 @@ The items in the Display-tab are explained here:
 - **Show statusbar events in chat-window**
   - If enabled all messages which are shown in the application's
     statusbar will also be put in the channel [chat-tab
-    window](@ref mainwindow).
+    window](@ref chattab).
     
 - **Check for program updates at start up**
   - When TeamTalk starts it should check to see if there's a new
     version available. If a new version is available a text message
-    will be shown in the Chat-tab.
+    will be shown in the [Chat-tab](@ref chattab).
 
 - **Show source in corner of video window**
   - If enabled the name of the person who is sending video will be
-    shown in corner of the video wnidow.
+    shown in corner of the video window.
 
 - **Maximum text length in channel list**
   - The names of users and channels can sometimes be very long. Use
@@ -251,16 +252,18 @@ The items in the Sound System-tab are explained here:
     option will remove the echo from speakers. It, however, requires a
     lot of system resources and is therefore not enabled by
     default. For best echo cancellation it's also advised to enable
-    the Audio Configuration option when creating channels.
+    the [Audio Configuration](@ref createchandlg) option when creating
+    channels.
 
 - **Enable automatic gain control (microphone level adjusted
   automatically)**
   - The volume level of microphones vary a lot therefore it's
     recommended enabling automatic gain control (AGC) to ensure all
     users in a channel speak at the same volume level. AGC is used in
-    combination with *Audio Configuration* when creating channels. The
-    volume level specified in the *Audio Configuration* will be used
-    as reference volume for AGC.
+    combination with [Audio Configuration](@ref createchandlg) when
+    creating channels. The volume level specified in the
+    [Audio Configuration](@ref createchandlg) will be used as
+    reference volume for AGC.
 
 - **Enable denoising**
   - If you have a poor quality microphone it is advised to enable
@@ -308,11 +311,11 @@ The items in the Sound Events-tab are explained here:
 
 - **New video session**
   - Play this sound when a new video stream can be seen in the
-    video-tab.
+    [Video-tab](@ref videotab).
 
 - **New desktop session**
   - Play this sound when a new shared desktop can be seen in the
-    Desktops-tab.
+    [Desktops-tab](@ref desktoptab).
 
 - **User entered question-mode**
   - Play this sound if a user in your channel changes status to

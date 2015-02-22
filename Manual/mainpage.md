@@ -10,7 +10,7 @@ Follow the links below to each of the help sections.
 - [User Interface Guide](@ref userinterface)
     - Learn what all the menus and buttons are used for in the TeamTalk
       application.
-- [Preferences](@ref preferencesdlg)
+- [Preferences](@ref preferences)
     - This section outlines all the possible ways the TeamTalk can be
       configured.
 - [How to...](@ref howto)
