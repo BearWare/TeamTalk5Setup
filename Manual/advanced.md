@@ -28,6 +28,9 @@ The TeamTalk 5 client supports the following command-line arguments:
 - Override auto-connect setting 
   - Usage:\verbatim TeamTalk5.exe -noconnect \endverbatim
 
+- Create new or load existing ini-file
+  - Usage:\verbatim TeamTalk5.exe -cfg MyIniFile.ini \endverbatim
+
 # Load settings file (TeamTalk5.ini) {#settingsfile}
 
 By default the TeamTalk client first looks in the directory of the
@@ -40,6 +43,9 @@ and on Windows XP it's in\verbatim
 C:\Documents and Settings\username\Application Data\endverbatim.
 On Linux and Mac the settings are located in:\verbatim
 $HOME/.config/BearWare.dk\endverbatim
+
+To manually create/load TeamTalk5.ini use the\verbatim -cfg \endverbatim
+command line argument, e.g.\verbatim TeamTalk5.exe -cfg MyIniFile.ini\endverbatim
 
 # Multiple client instances with different settings {#multiclients}
 
