@@ -29,7 +29,7 @@ The TeamTalk 5 client supports the following command-line arguments:
   - Usage:\verbatim TeamTalk5.exe -noconnect \endverbatim
 
 - Create new or load existing ini-file
-  - Usage:\verbatim TeamTalk5.exe -cfg MyIniFile.ini \endverbatim
+  - Usage:\verbatim TeamTalk5.exe -cfg c:\Documents\TeamTalk5.ini \endverbatim
 
 # Load settings file (TeamTalk5.ini) {#settingsfile}
 
