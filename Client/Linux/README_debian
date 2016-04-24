@@ -1,0 +1,62 @@
+TeamTalk 5 for Debian 7
+-----------------------
+
+TeamTalk 5 runs on Debian 7 using ALSA sound system for audio and
+Video4Linux for video capture. Video capture on Linux can, however, be
+a real pain to make work properly and so far only Logitech WebCams
+have been tested successfully.
+
+When joining or creating a channel on a server then ensure that your
+audio input and playback device support the sample rate required to
+used by the channel, otherwise you'll get an audio device failure.
+
+
+Dependencies
+------------
+
+In order to run TeamTalk the following dependencies must be
+installed first:
+
+- libqt4-core
+- libqt4-network
+- libqt4-xml
+- libqt4-gui
+- libasound2
+- libopus
+- libvpx
+- libspeex
+- libspeexdsp
+
+To install the packages run the following command as 'root':
+
+apt-get install libqt4-core libqt4-network libqt4-xml libqt4-gui libasound2 libopus libvpx libspeex libspeexdsp
+
+
+Run TeamTalk
+------------
+
+Use the run.sh script to start the TeamTalk client. The run.sh script
+includes the shared library (libTeamTalk.so) dependency in the library
+path.
+
+
+Known Issues
+------------
+
+There are still a couple of issues which needs to be fixed in the
+TeamTalk client before it runs smoothly on Linux. These are listed
+here:
+
+- Modifier keys alone cannot be used as hotkeys. Hotkeys needs to be
+  either a regular key or a regular key and a modifier key. F12 seems
+  like a good key to use as a PTT key on Linux when using KDE.
+
+- Streaming video flickers sometimes
+
+
+Help
+----
+
+If you have problems running TeamTalk then look in the forum at
+http://www.bearware.dk for help.
+
