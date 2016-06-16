@@ -25,6 +25,6 @@
         <new-video-session>Sounds\videosession.wav</new-video-session>
         <new-desktop-session>Sounds\desktopsession.wav</new-desktop-session>
         <question-mode>Sounds\questionmode.wav</question-mode>
-		<desktop-access-req>Sounds\desktopaccessreq.wav</desktop-access-req>
+        <desktop-access-req>Sounds\desktopaccessreq.wav</desktop-access-req>
     </events>
 </teamtalk>
