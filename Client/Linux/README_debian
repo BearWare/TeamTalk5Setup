@@ -1,14 +1,12 @@
-TeamTalk 5 for Debian 7
+TeamTalk 5 for Debian 7/8
 -----------------------
 
-TeamTalk 5 runs on Debian 7 using ALSA sound system for audio and
-Video4Linux for video capture. Video capture on Linux can, however, be
-a real pain to make work properly and so far only Logitech WebCams
-have been tested successfully.
+TeamTalk 5 runs on Debian 7/8 using ALSA sound system for audio and
+Video4Linux2 (V4L2) for video capture.
 
 When joining or creating a channel on a server then ensure that your
-audio input and playback device support the sample rate required to
-used by the channel, otherwise you'll get an audio device failure.
+audio input and output devices support the sample rate used by the
+channel, otherwise you'll get an audio device failure.
 
 
 Dependencies
@@ -22,14 +20,10 @@ installed first:
 - libqt4-xml
 - libqt4-gui
 - libasound2
-- libopus
-- libvpx
-- libspeex
-- libspeexdsp
 
 To install the packages run the following command as 'root':
 
-apt-get install libqt4-core libqt4-network libqt4-xml libqt4-gui libasound2 libopus libvpx libspeex libspeexdsp
+apt-get install libqt4-core libqt4-network libqt4-xml libqt4-gui libasound2
 
 
 Run TeamTalk
