@@ -26,5 +26,13 @@
         <new-desktop-session>Sounds\desktopsession.wav</new-desktop-session>
         <question-mode>Sounds\questionmode.wav</question-mode>
         <desktop-access-req>Sounds\desktopaccessreq.wav</desktop-access-req>
+        <voice-activated>Sounds\voiceact_on.wav</voice-activated>
+        <voice-deactivated>Sounds\voiceact_off.wav</voice-deactivated>
+        <enable-voice-activation>Sounds\vox_enable.wav</enable-voice-activation>
+        <disable-voice-activation>Sounds\vox_disable.wav</disable-voice-activation>
+        <me-enable-voice-activation>Sounds\vox_me_enable.wav</me-enable-voice-activation>
+        <me-disable-voice-activation>Sounds\vox_me_disable.wav</me-disable-voice-activation>
+        <transmit-queue-front>Sounds\txqueue_start.wav</transmit-queue-front>
+        <transmit-queue-stop>Sounds\txqueue_stop.wav</transmit-queue-stop>
     </events>
 </teamtalk>
