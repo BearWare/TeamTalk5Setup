@@ -19,6 +19,7 @@ installed first:
 - libqt4-network
 - libqt4-xml
 - libqt4-gui
+- libqt4-webkit
 - libasound2
 
 To install the packages run the following command as 'root':
