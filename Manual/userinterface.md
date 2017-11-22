@@ -292,12 +292,20 @@ green.
 If you manually want to connect to a TeamTalk server then the person
 who is running the server must provide the information for the fields
 Host IP-address, TCP port and UDP port along with a user account
-containing both username and password. To join a specific channel once
-you have logged on to the server can be done by filling out Channel
-and Password fields. Once you have filled out all the information you
-have been provided you can save the server to the Server List by
-filling the Entry name field and afterwards click **Save**. Finally click
-**Connect** to connect to the server.
+containing both username and password.
+
+If the username to log on to the server is "facebook" then a dialog
+will pop up asking you to log into Facebook. For more information on
+Facebook login read section @ref fbuseraccount. If at some point you
+want to log into a different Facebook account then hit Escape when the
+Facebook login dialog appears.
+
+To join a specific channel once you have logged on to the server can
+be done by filling out Channel and Password fields. Once you have
+filled out all the information you have been provided you can save the
+server to the Server List by filling the Entry name field and
+afterwards click **Save**. Finally click **Connect** to connect to the
+server.
 
 Learn more about setting up user accounts by read the section on
 [configuring TeamTalk servers](@ref teamtalkserver) or the section
@@ -368,10 +376,13 @@ yourself. The possible options are shown here.
 Each of the menu items in the Me-menu are described here:
 
 - **Change Nickname**
-    - The will change your name on the server. Your current nickname
-      is the one shown in bold in the channels view. The nickname is
-      simply a display name. It has no relation to your username (if
-      you have a user account).
+    - This will change your name on the server. Your current nickname
+      is the one shown in bold text in the channels view. The nickname
+      is simply a display name. It has no relation to your username
+      (if you have a user account). In @ref useraccountsdlg it's
+      possible to lock the nickname so it cannot be changed. This is
+      especially useful if you use a [Facebook login](@ref fbuseraccount)
+      and want to know who the people are.
 - **Change Status**
     - This is used to change your status mode, like e.g. Available,
       Away, Question-mode and set a message regarding your current
@@ -464,7 +475,10 @@ active.
 
 - **View User Information**
     - Use this menu item to get extended information about a user,
-      like e.g. username, user type and packet reception.
+    like e.g. username, user type and packet reception. If the user is
+    a Facebook user then it's possible open the user's profile
+    page. Read section [Facebook Login](@ref fbuseraccount) to learn
+    more about Facebook logins.
 - **Messages**
     - The menu item is for sending user to user text messages. A
       message dialog will pop up on the user's computer when you send
@@ -899,9 +913,11 @@ contains the items shown here:
 Each of the menu items in the Server-menu are described here.
 
 - **User Accounts**
-    - List all user accounts on the server and administrate existing
-      ones. Only administrators can do this. More is explained in the
-      [User Accounts Dialog](@ref useraccountsdlg).
+    - See the properties of the user account which is currently active
+      (your on login). If you're logged in as administrator you can
+      list all user accounts on the server and administrate existing
+      ones. More is explained in the [User Accounts Dialog](@ref
+      useraccountsdlg).
 
 - **Banned Users**
     - List all the users who are banned from the server. Users are
@@ -942,10 +958,10 @@ Each of the menu items in the Server-menu are described here.
 
 For users to log on to a TeamTalk server they must have a user
 account. Only users of user-type *Administrator* can create/modify
-user accounts. When the TeamTalk server is
-[configured](@ref teamtalkserver) initially an administrator account can
-be set up so further user accounts can be set up using this user
-accounts dialog. Here is shown the User Accounts-dialog.
+user accounts. When the TeamTalk server is [configured](@ref teamtalkserver)
+initially an administrator account can be set up so
+further user accounts can be created using this user accounts
+dialog. Here is shown the User Accounts-dialog.
 
 ![User Accounts Dialog](dlg_useraccounts.png "User Accounts")
 
@@ -953,9 +969,19 @@ The Active Users list contains all the user accounts on the
 server. The remaining items are explained here:
 
 - **Username**
-    - The username the new user account. 
+    - The username for the user account. A client logging on to the
+      TeamTalk server must provide this along with a password.
+    - If the username "facebook" is used then the clients using this
+      username will be asked to authenticate with
+      [Facebook](http://www.facebook.com) before logging in. Read
+      section [Facebook Login](@ref fbuseraccount) for more
+      information on setting up a Facebook login.
 - **Password**
-    - The password of the new user account. 
+    - The password of the new user account.
+    - For Facebook logins, i.e. username "facebook" or
+      postfix "@facebook.com", no password is required (the TeamTalk
+      server validates the user's authenticity with Facebook's login
+      service).
 - **Note**
     - Information about the user account can be put here.
 - **Initial Channel**
@@ -983,6 +1009,12 @@ server. The remaining items are explained here:
     - If enabled multi users can log in with the same username. If
       disabled and two log in with the same username, then the first
       person to log in will be kicked off the server.
+- **User can change nickname**
+    - If unchecked then the user cannot change the client's nickname
+      using the [Change Nickname menu item](@ref memenu). This can
+      also be used if users show be force to use their Facebook
+      profile name as nickname.  See section @ref fbuseraccount for
+      more information on using Facebook accounts.
 - **User can see users in all channels**
     - If unchecked the user can only see users in the current channel.
 - **User can create/modify all channels**
@@ -1040,6 +1072,31 @@ server. The remaining items are explained here:
 - **Delete**
     - Delete the seleced user account in the Active Users list.
 
+## Facebook Login {#fbuseraccount}
+
+By specifying the username "facebook" will force the clients using
+this user account to log in using their Facebook account. The TeamTalk
+server will then authenticate that the login is valid using Facebook's
+login service. Section @ref fbserver explains what is required for a
+TeamTalk server to handle Facebook logins.
+
+When a Facebook user is logged into the TeamTalk server then their
+username will appear as their Facebook user ID followed by
+@@facebook.com. Here's an example:
+
+![User Information Dialog](dlg_userinfo.png "User Information")
+
+If you want one Facebook user to have special user-rights on the
+TeamTalk server then you can create a user account with the Facebook
+user's account name. In the above example the username for the 
+account would be "10155659119756192@facebook.com".
+
+The dialog picture in section [User Accounts](@ref useraccountsdlg)
+shows 10155659119756192@facebook.com as an active user account.
+
+Note that by not allowing users to change nickname (when creating a
+Facebook user account) will cause their Facebook profile name to
+appear as their nickname on the TeamTalk server.
 
 ## Banned Users Dialog {#bannedusersdlg}
 
