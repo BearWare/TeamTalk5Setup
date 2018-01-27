@@ -263,7 +263,10 @@ Each of the menu items in the Client menu are described here:
 
 - **New Client Instance**
     - Start a new TeamTalk instance, so you're able to connect to
-      multiple servers.
+      multiple servers. When starting a new instance you'll be asked
+      to set up a profile. That way it's possible have use different
+      configurations depending on which server you're connected to.
+      There's a maximum of 16 profiles.
 - **Connect**
     - To connect to a new server or one you have connected to
       recently. For more information read section
@@ -516,11 +519,14 @@ active.
 - **Kick**
     - **Kick from channel**
         - Kick the user out of the channel.
+    - **Kick and Ban From Channel**
+        - Ensure the user cannot join the channel again by banning either
+          the person's username or IP-address.
     - **Kick from server**
         - Kick the user off the server so the person has to log in
           again.
-    - **Kick and Ban**
-        - Kick the user off the server and ban the user's
+    - **Kick and Ban From Server**
+        - Kick the user off the server and ban the user's username or
           IP-address. Only users with the
           [User can ban users from server](@ref useraccountsdlg)
           *user-right* can do this.
@@ -692,6 +698,12 @@ Each of the menu items in the Channels menu are described here.
       with *user-right*
       [User can create/modify all channels](@ref useraccountsdlg) can
       delete a channel.
+
+- **Banned Users From Channel**
+    - List the users who are currently banned from joining the selected
+      channel. Only users who are [channel operators](@ref createchandlg)
+      or have a user account with the ability to [ban](@ref useraccountsdlg)
+      people are able to remove banned users.
 
 - **Stream Media File to Channel**
     - A [dialog](@ref streammediadlg) will pop up where it's possible to
