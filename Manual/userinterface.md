@@ -638,7 +638,8 @@ Each of the menu items in the Advanced-menu are described here.
 - **Store User(s) for Move**
     - Store the selected users so they can be moved to another channel.
 - **Move User(s)**
-    - Move the selected users to the selected channel. 
+    - Move the selected users, i.e. those from *Store User(s) for Move*,
+      to the selected channel. 
 - **Allow Voice Transmission**
     - When a [channel is configured](@ref createchandlg) in Classroom mode
       this menu item can be checked to allow the user to talk in the
