@@ -1112,7 +1112,7 @@ appear as their nickname on the TeamTalk server.
 
 ## Banned Users Dialog {#bannedusersdlg}
 
-The Banned Users dialog shows the IP-addresses which are currently
+The Banned Users dialog shows the users who are currently
 blocked by the server. Here is an example of users which have been
 banned on a server.
 
@@ -1120,6 +1120,10 @@ banned on a server.
 
 To remove a ban on a user simply move the user from the left list to
 the right list using the button with the greater than sign.
+
+New bans based on username or IP-address can be added manually using
+the Add-button. Wildcards can be used for IP-address,
+e.g. 192.168.0.*.
 
 ## Online Users Dialog {#onlineusersdlg}
 
