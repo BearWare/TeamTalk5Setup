@@ -974,13 +974,36 @@ account. Only users of user-type *Administrator* can create/modify
 user accounts. When the TeamTalk server is [configured](@ref teamtalkserver)
 initially an administrator account can be set up so
 further user accounts can be created using this user accounts
-dialog. Here is shown the User Accounts-dialog.
+dialog.
+
+Note that a special account with the username "facebook" can be used
+to allow Facebook logins. More on this in
+[Facebook Login](@ref fbuseraccount) section.
+
+Here is shown the User Accounts-dialog.
 
 ![User Accounts Dialog](dlg_useraccounts.png "User Accounts")
 
 The Active Users list contains all the user accounts on the
-server. The remaining items are explained here:
+server.
 
+The remaining items are explained in the following sections.
+
+### Modify User Account
+
+- **Clear**
+    - Clear the fields for the user account.
+- **Add/Update**
+    - Create or update a user account. 
+- **Delete**
+    - Delete the seleced user account in the Active Users list.
+
+### Basic Account Properties
+
+- **User type**
+    - Currently TeamTalk supports two types of users, Default User and
+      Administrator. Administrator have full rights to everything
+      whereas default users only have limited rights.
 - **Username**
     - The username for the user account. A client logging on to the
       TeamTalk server must provide this along with a password.
@@ -1001,22 +1024,8 @@ server. The remaining items are explained here:
     - Once the user with this account logs on to the server the person
       should be moved to the specified channel. Note this requires
       that the user is running TeamTalk 4.3 or later.
-- **User type**
-    - Currently TeamTalk supports two types of users, Default User and
-      Administrator. Administrator have full rights to everything
-      whereas default users only have limited rights.
-- **Auto-Operator Channels**
-    - **Selected Channels**
-        - The user with the specified user account will automatically
-          become [channel-operator](@ref op) in the listed channels.
-    - **Available Channels**
-        - The list of channels where a user can automatically become
-          [channel-operator](@ref op). Only static channels are
-          supported for auto-operator mode.
-- **Max bitrate for audio codecs**
-    - If users are allowed to create channels on a server setting this
-      option can limit the bitrate of the audio codec they are able to
-      specify.
+
+### User Rights
 
 - **User can log in multiple times**
     - If enabled multi users can log in with the same username. If
@@ -1078,12 +1087,30 @@ server. The remaining items are explained here:
     - If checked and another user is sharing a desktop window then it
       will possible for the user to control mouse and keyboard on the
       shared desktop window.
-- **Clear**
-    - Clear the fields for the user account.
-- **Add/Update**
-    - Create or update a user account. 
-- **Delete**
-    - Delete the seleced user account in the Active Users list.
+
+### Channel Operator
+
+- **Auto-Operator Channels**
+    - **Selected Channels**
+        - The user with the specified user account will automatically
+          become [channel-operator](@ref op) in the listed channels.
+    - **Available Channels**
+        - The list of channels where a user can automatically become
+          [channel-operator](@ref op). Only static channels are
+          supported for auto-operator mode.
+
+### Codec Limitations
+
+- **Max bitrate for audio codecs**
+    - If users are allowed to create channels on a server setting this
+      option can limit the bitrate of the audio codec they are able to
+      specify.
+
+### Abuse Prevention
+
+- **Limit issued commands**
+  - Prevent users from sending numerous commands to the server or
+    other users.
 
 ## Facebook Login {#fbuseraccount}
 
