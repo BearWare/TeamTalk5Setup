@@ -27,7 +27,7 @@ case "$1" in
 	log_daemon_msg "Starting TeamTalk Server " "tt5srv"
 	start-stop-daemon --start --quiet --oknodo --background \
 	--chdir "$WORKDIR" --pidfile "$PIDFILE" \
-	--exec "$BIN -wd $WORKDIR -pid-file $PIDFILE -d"
+	--exec "$BIN" -- -wd "$WORKDIR" -pid-file "$PIDFILE" -d
 	log_end_msg $?
 	;;
     stop)
