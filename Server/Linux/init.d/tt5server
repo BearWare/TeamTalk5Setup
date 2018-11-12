@@ -1,3 +1,4 @@
+#!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          tt5server
 # Required-Start:    $local_fs $remote_fs
@@ -24,7 +25,9 @@ USER=tt
 case "$1" in
     start)
 	log_daemon_msg "Starting TeamTalk Server " "tt5srv"
-	su $USER -c "$BIN -wd $WORKDIR -pid-file $PIDFILE -d"
+	start-stop-daemon --start --quiet --oknodo --background \
+	--chdir "$WORKDIR" --pidfile "$PIDFILE" \
+	--exec "$BIN -wd $WORKDIR -pid-file $PIDFILE -d"
 	log_end_msg $?
 	;;
     stop)
